@@ -40,12 +40,12 @@
 
         <div class="form-group col-md-4">  
             <label for="id_number">ID number :</label>
-            <input type="text" class="form-control" id="id_number" placeholder="ID number" [(ngModel)]="student.id_number" name="id_number">
+            <input type="text" class="form-control" id="idNumber" placeholder="ID number" [(ngModel)]="student.idNumber" name="idNumber">
         </div>
 
         <div class="form-group col-md-4">
                 <label for="home_language">Home language :</label>  
-                <input type="text" class="form-control" id="home_language" placeholder="Home language" [(ngModel)]="student.home_language" name="home_language">
+                <input type="text" class="form-control" id="homeLanguage" placeholder="Home language" [(ngModel)]="student.homeLanguage" name="homeLanguage">
         </div>
 
         <div class="form-group col-md-4">  
@@ -66,7 +66,7 @@
               </div>
         <div class="form-group col-md-4">
                 <label for="Previous_school">Previous School :</label>
-                <input type="text" class="form-control" id="Previous_school" placeholder="Previous School" [(ngModel)]="student.Previous_school" name="Previous_school">
+                <input type="text" class="form-control" id="previousSchool" placeholder="Previous School" [(ngModel)]="student.previousSchool" name="previousSchool">
         </div>
 
           <div class="form-group col-md-4">
@@ -95,12 +95,12 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="City"  [(ngModel)]="student.address.City" name="City">
+              <input type="text" class="form-control" id="city"  [(ngModel)]="student.address.city" name="city">
             </div>
           </div>
             <div class="form-group col-md-4">
               <label for="inputProvince">Province</label>
-              <select id="province" class="form-control" [(ngModel)]="student.address.State" name="province">
+              <select id="province" class="form-control" [(ngModel)]="student.address.province" name="province">
                 <option selected>Choose...</option>
                 <option>Eatern Cape</option>
                 <option>Western Cape</option>
@@ -109,12 +109,12 @@
 
             <div class="form-group col-md-2">
               <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip" [(ngModel)]="student.address.Zip" name="Zip">
+              <input type="text" class="form-control" id="zipCode" [(ngModel)]="student.address.zipCode" name="zipCode">
             </div>
 
             <div class="form-group col-md-2">
               <label for="inputZip">Coutry</label>
-              <input type="text" class="form-control" id="coutry" [(ngModel)]="student.address.coutry" name="coutry">
+              <input type="text" class="form-control" id="country" [(ngModel)]="student.address.country" name="country">
             </div>
          
 

@@ -13,6 +13,8 @@ export class StudentApplicationDTO{
 	  reasonForLeaving:string
 	  pastResults:string
 	  address:AddressDTO
+	  grade:string
+	  reason:string
 }
 
 
