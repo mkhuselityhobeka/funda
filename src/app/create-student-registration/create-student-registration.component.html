@@ -1,0 +1,45 @@
+<br><br>
+<div class ="row justify-content-center align-items-center">
+     <h2>REGISTER HERE</h2>
+</div>
+<br><br>
+<div class ="row justify-content-center align-items-center">
+           
+
+        <div [hidden]="submitted" style="width: 600px;" class="form-group">
+          <form  novalidate>
+        
+                  <div class="row">
+                        <div class="col">
+                             <input type="text" class="form-control" placeholder="First name" id="sname" name="sname" [(ngModel)]="studentRegistration.sname" name="sname"required>
+                         
+                        </div>
+                        
+                        <div class="col">
+                            <input  type="text" class="form-control " placeholder="Last name" id="slastName" name="slastName" [(ngModel)]="studentRegistration.slastName" name="slastName" required> 
+                        </div>
+                        <br><br>
+                    </div>
+                
+                 <br><br>
+                 <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Email" id="username" name="username"[(ngModel)]="studentRegistration.username" name="username"required>
+                  </div>
+                  <br><br>
+                         <div class="col">
+                             <input  type="text" class="form-control " placeholder="Password" id="password"  name="password" [(ngModel)]="studentRegistration.password" name="password"required maxlength="15"
+                                >
+                        </div>
+                        <br><br>
+                 </div>
+                <br>
+                <button type="submit" value="submit" class="btn btn-outline-success form-control" (click)="save()" > REGISTER</button>
+                <br><br>
+                <div class="row justify-content-center align-items-center">
+                        <p>Aleady registered?
+                                <a [routerLink]="['/login']" role="link">Login</a></p>
+                </div>
+      
+        </form>
+</div>

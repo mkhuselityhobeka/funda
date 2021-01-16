@@ -1,0 +1,38 @@
+<!-- Default form login -->
+
+<form class="text-center border border-light p-5" action="#!">
+
+        <p class="h4 mb-4">Sign In</p>
+    
+            <div class="row justify-content-center align-items-center">
+                <!-- Email -->
+                <input type="email" id="email" class="form-control  col-sm-4 col mb-4" placeholder="Email address">
+            </div>
+       
+            <div class="row justify-content-center align-items-center"><!-- Password -->
+                <input type="password" id="passwords" class="form-control col-sm-4 col mb-4" placeholder="Password">
+            </div>
+        
+        <!-- Sign in button -->
+            <div class="row justify-content-center align-items-center">
+                  <button class="btn btn-outline-success col-sm-4 my-4" type="submit">Sign in</button>
+            </div>
+        <!-- Register -->
+            <p>Not a member?
+                <a [routerLink]="['/registration']" role="link">Register</a>/<a [routerLink]="['/forgot-password']" role="link">Forgot password?</a>
+            </p>
+    
+        <!-- Social login -->
+            <p>or sign in with:</p>
+            <div class="row justify-content-center align-items-center">
+                <button class="btn btn-outline-danger " type="submit">Login with Google</button>
+            </div>
+    
+            <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+    
+    </form>
+    
+    <!-- Default form login -->

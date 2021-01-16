@@ -1,0 +1,132 @@
+<form novalidate>
+      
+        <main role="main">
+
+                <!-- Main jumbotron for a primary marketing message or call to action -->
+                <div class="jumbotron">
+                   <div class="container">
+                      <h1 class="display-3">Online Application Form</h1>
+                      <p>Please be assured that we treat your personal information with the utmost confidentiality.
+                          PLEASE NOTE: The application form will not submit unless all terms and conditions are agreed to.</p>
+                     </div>
+                </div>
+        
+    <!--<div class="form-row">
+            
+      <div class="form-group col-md-4">
+        
+        <input type="email" class="form-control" id="firstName" placeholder="First Name">
+      </div>
+      <div class="form-group col-md-4">
+        
+        <input type="password" class="form-control" id="lastName" placeholder="Last Name">
+      </div>
+    </div>-->
+    <div class="form-row">
+        <div class="form-group col-md-4">
+                <label for="firstName">First Name :</label>
+            <input type="email" class="form-control" id="firstName" placeholder="First Name" [(ngModel)]="student.firstName" name="firstName">
+        </div>
+
+        <div class="form-group col-md-4">
+                <label for="lastName">Last Name :</label>         
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" [(ngModel)]="student.lastName" name="lastName">
+        </div>
+        
+        <div class="form-group col-md-4">
+            <label for="pob">Place Of Birth :</label> 
+            <input type="text" class="form-control" id="pob" placeholder="Place of birth" [(ngModel)]="student.pob" name="pob">
+        </div>
+
+        <div class="form-group col-md-4">  
+            <label for="id_number">ID number :</label>
+            <input type="text" class="form-control" id="id_number" placeholder="ID number" [(ngModel)]="student.id_number" name="id_number">
+        </div>
+
+        <div class="form-group col-md-4">
+                <label for="home_language">Home language :</label>  
+                <input type="text" class="form-control" id="home_language" placeholder="Home language" [(ngModel)]="student.home_language" name="home_language">
+        </div>
+
+        <div class="form-group col-md-4">  
+                <label for="citizenship">Citizenship :</label>
+                <input type="text" class="form-control" id="citizenship" placeholder="Citizenship" [(ngModel)]="student.citizenship" name="citizenship">
+        </div>
+
+        <div class="form-group col-md-4">
+                <label for="grade">Grade Applying For :</label>
+                <select id="grade" class="form-control" [(ngModel)]="student.grade" name="grade">
+                  <option selected>Choose...</option>
+                  <option>Grade 8</option>
+                  <option>Grade 9</option>
+                  <option>Grade 10</option>
+                  <option>Grade 11</option>
+                  <option>Grade 12</option>
+                </select>
+              </div>
+        <div class="form-group col-md-4">
+                <label for="Previous_school">Previous School :</label>
+                <input type="text" class="form-control" id="Previous_school" placeholder="Previous School" [(ngModel)]="student.Previous_school" name="Previous_school">
+        </div>
+
+          <div class="form-group col-md-4">
+                <label for="Reason_for_leaving">Reason Leaving Current School :</label>
+                <input type="text" class="form-control" id="reason" placeholder="Reason for leaving" [(ngModel)]="student.reason" name="reason">
+          </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="inputAddress2">Address </label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor" name="inputAddress2">
+        </div>
+        
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Street Name</label>
+              <input type="text" class="form-control" id="streetName"  [(ngModel)]="student.address.streetName" name="streetName">
+            </div>
+          </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">House Number</label>
+                <input type="text" class="form-control" id="houseNumber"  [(ngModel)]="student.address.houseNumber" name="houseNumber">
+              </div>
+            </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="City"  [(ngModel)]="student.address.City" name="City">
+            </div>
+          </div>
+            <div class="form-group col-md-4">
+              <label for="inputProvince">Province</label>
+              <select id="province" class="form-control" [(ngModel)]="student.address.State" name="province">
+                <option selected>Choose...</option>
+                <option>Eatern Cape</option>
+                <option>Western Cape</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" [(ngModel)]="student.address.Zip" name="Zip">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="inputZip">Coutry</label>
+              <input type="text" class="form-control" id="coutry" [(ngModel)]="student.address.coutry" name="coutry">
+            </div>
+         
+
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" >
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+   
+      <button type="submit" value="submit" class="btn btn-outline-success form-group col-md-4S" style="text-align: center;" (click)="saveStudentApp();"> Submit Form</button>
+  </main>
+</form>
