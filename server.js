@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
   });
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/funda-registration-front-end/index.html'}),
+    res.sendFile('/home/papi/DEV-TOOLS/FundaRegistration-Front-End/src/app/home-page/home-page.component.html', {root: 'dist/funda-registration-front-end/index.html'}),
 );
 
 app.listen(process.env.PORT || 8080);
