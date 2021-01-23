@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static('./dist/funda-registration-front-end'));
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/funda-registration-front-end/'}),
+    res.sendFile('./app.component.html', {root: 'dist/funda-registration-front-end/'}),
     
 );
 
